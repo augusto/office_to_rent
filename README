@@ -1,0 +1,4 @@
+== Welcome to Office to Rent
+
+This is a small pet project to investigate how to build multi-tenant applications in rails 3, in which each tenant has its own database schema.
+
