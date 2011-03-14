@@ -1,0 +1,19 @@
+<% title "Instances" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Url Token</th>
+  </tr>
+  <% for instance in @instances %>
+    <tr>
+      <td><%= instance.name %></td>
+      <td><%= instance.url_token %></td>
+      <td><%= link_to "Show", instance %></td>
+      <td><%= link_to "Edit", edit_instance_path(instance) %></td>
+      <td><%= link_to "Destroy", instance, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Instance", new_instance_path %></p>

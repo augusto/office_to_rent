@@ -1,0 +1,20 @@
+<%= form_for @user do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :password_hash %><br />
+    <%= f.text_field :password_hash %>
+  </p>
+  <p>
+    <%= f.label :salt %><br />
+    <%= f.text_field :salt %>
+  </p>
+  <p>
+    <%= f.label :instance_id %><br />
+    <%= f.text_field :instance_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

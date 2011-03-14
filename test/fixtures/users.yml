@@ -1,0 +1,11 @@
+one:
+  name: MyString
+  password_hash: MyString
+  salt: MyString
+  instance_id: 1
+
+two:
+  name: MyString
+  password_hash: MyString
+  salt: MyString
+  instance_id: 1

@@ -1,0 +1,12 @@
+<%= form_for @instance do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :url_token %><br />
+    <%= f.text_field :url_token %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

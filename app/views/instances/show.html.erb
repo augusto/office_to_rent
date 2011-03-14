@@ -1,0 +1,16 @@
+<% title "Instance" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @instance.name %>
+</p>
+<p>
+  <strong>Url Token:</strong>
+  <%= @instance.url_token %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_instance_path(@instance) %> |
+  <%= link_to "Destroy", @instance, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", instances_path %>
+</p>
